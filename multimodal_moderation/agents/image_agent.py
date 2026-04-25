@@ -54,7 +54,7 @@ async def moderate_image(
     #       like we did in the class.
     # Make sure to pass: model=model_choice.model and model_settings=model_choice.model_settings
 
-    result = await text_moderation_agent.run( 
+    result = await image_moderation_agent.run( 
         [image_input],
         model=model_choice.model,
         model_settings=model_choice.model_settings
