@@ -55,7 +55,7 @@ async def moderate_text(model_choice: ModelChoice, text: str) -> TextModerationR
 
       
     result = await text_moderation_agent.run( 
-        user_prompts=[text],
+        user_prompt=[text],
         model=model_choice.model,
         model_settings=model_choice.model_settings
     )
